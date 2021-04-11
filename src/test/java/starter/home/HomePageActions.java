@@ -1,7 +1,7 @@
 package starter.home;
 
 import net.thucydides.core.annotations.Step;
-
+import static starter.utilities.Constants.HttpResponseStatus.OK;
 public class HomePageActions {
 
 	HomePage homePage;
@@ -30,5 +30,17 @@ public class HomePageActions {
 		}
 		else return null;
 		
+	}
+
+	@Step("Select Worldwide link")
+	public void selectWorldWideLink() {
+		homePage.selectWorldWideLink();
+	}
+
+	public boolean verifyCountrySpecificLinks() {
+		for(String status : homePage.verifyCountrySpecificLinks()) {
+			if(! status.equalsIgnoreCase(OK)) return false;
+		}
+		return true;
 	}
 }

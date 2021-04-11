@@ -24,8 +24,8 @@ public class AutomationPageActions {
 		automationPage.selectCountry(country);
 		automationPage.inputMessage(message);
 		automationPage.selectCheckBoxAgree();
-		automationPage.selectCheckBoxCaptcha();
-		automationPage.submitForm();
+		//automationPage.selectCheckBoxCaptcha();
+		//automationPage.submitForm();
 	}
 
 	public boolean validateSuccessfulSubmission() {

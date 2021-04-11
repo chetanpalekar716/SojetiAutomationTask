@@ -32,5 +32,15 @@ public class HomePageDefinitions {
 	public void the_menu_along_with_submenu_are_selected(String menuItem, String subMenuItem) {
 		assertThat(homePageActions.validatePageStyle(menuItem, subMenuItem)).isEqualTo(RED);
 	}
+	
+	@When("User tries to verify Worldwide Country specific Sogeti links")
+	public void user_tries_to_verify_worldwide_country_specific_sogeti_links() {
+		homePageActions.selectWorldWideLink();
+	}
+
+	@Then("all Worldwide Country specific Sogeti links are working")
+	public void all_worldwide_country_specific_sogeti_links_are_working() {
+		assertThat(homePageActions.verifyCountrySpecificLinks()).isTrue();
+	}
 
 }
