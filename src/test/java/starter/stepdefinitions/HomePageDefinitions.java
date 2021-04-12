@@ -20,9 +20,8 @@ public class HomePageDefinitions {
 		homePageActions.hoverMenu(menuItem);
 	}
 
-	@When("clicks on {string} link")
-	public void clicks_on_link(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@When("selects {string} submenu")
+	public void selects_submenu(String subMenuItem) {
+	    homePageActions.selectSubMenu(subMenuItem);
 	}
 }

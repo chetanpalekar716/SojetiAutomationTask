@@ -14,6 +14,11 @@ public class HomePageActions {
 	
 	@Step("Hover over '{0}' Menu")
 	public void hoverMenu(String menuItem) {
-		homePage.hoverOver(menuItem);
+		homePage.hoverOverMenu(menuItem);
+	}
+	
+	@Step("Select '{0}' Sub-Menu")
+	public void selectSubMenu(String subMenuItem) {
+		homePage.selectSubMenu(subMenuItem);
 	}
 }
