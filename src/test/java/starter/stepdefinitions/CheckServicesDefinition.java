@@ -1,8 +1,12 @@
 package starter.stepdefinitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Steps;
 import static org.assertj.core.api.Java6Assertions.assertThat;
+
+import java.util.ArrayList;
+
 import starter.restservices.ServiceApi;
 
 
@@ -29,5 +33,18 @@ public class CheckServicesDefinition {
 	@Given("response time is less than {long} second")
 	public void response_time_is_less_than_second(long responseTime) {
 		assertThat(serviceApi.getResponseTime()).isLessThan(responseTime);
+	}
+	
+	@Then("country is {string} state is {string}")
+	public void country_is_state_is(String country, String state) {
+	    ArrayList<String> region = new ArrayList<String>();
+	    region.add(country);
+	    region.add(state);
+		assertThat(serviceApi.getRegion().containsAll(region)).isTrue();
+	}
+
+	@Then("for post code {string} the place name has {string}")
+	public void for_post_code_the_place_name_has(String postCode, String placeName) {
+		assertThat(serviceApi.getPlaceNameForPostCode(postCode)).contains(placeName);
 	}
 }

@@ -6,4 +6,6 @@ Feature: Verify basic service responses
     Given an API Get Request is triggered
     Then API service response code is 200
     And content type is "JSON"
-    And response time is less than 4 second
+    And response time is less than 1 second
+    And country is "Germany" state is "Baden-Württemberg"
+    And for post code "70597" the place name has "Stuttgart Degerloch" 
