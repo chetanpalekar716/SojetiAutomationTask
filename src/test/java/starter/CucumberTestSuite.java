@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        tags = "@ValidateLinks",
+        tags = "@APITest1",
         features = "src/test/resources/features"
         
 )
