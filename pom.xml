@@ -111,7 +111,7 @@
 					</systemPropertyVariables>
 					<parallel>classes</parallel>
 					<parallel>methods</parallel>
-					<useUnlimitedThreads>true</useUnlimitedThreads>
+					<useUnlimitedThreads>false</useUnlimitedThreads>
 				</configuration>
 				<executions>
 					<execution>

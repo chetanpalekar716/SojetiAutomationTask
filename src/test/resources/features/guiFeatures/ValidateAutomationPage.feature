@@ -1,5 +1,5 @@
 #Test Case 1
-@automationPage
+@automationPage @SogetiTask
 Feature: Validate text and links on Automation Page under Services
 
   Scenario: Automation text validation

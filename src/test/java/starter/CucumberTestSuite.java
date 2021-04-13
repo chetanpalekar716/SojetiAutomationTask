@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        tags = "@APITest1",
+        tags = "@SogetiTask",
         features = "src/test/resources/features"
         
 )

@@ -1,5 +1,5 @@
 #Test Case 3
-@ValidateLinks
+@ValidateLinks @SogetiTask
 Feature: Verify all Worldwide Country specific Sogeti links
 
   Scenario: Check Country specific Sogeti links are working

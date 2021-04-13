@@ -1,5 +1,5 @@
 #Test Case 2
-@SubmitContactForm
+@SubmitContactForm @SogetiTask
 Feature: Fill and Submit Contact Us Form on Automation Page under Services
 
   Scenario Outline: Fill and Submit Contact Us Form
@@ -12,4 +12,4 @@ Feature: Fill and Submit Contact Us Form on Automation Page under Services
 			
 		Examples:
 			|FirstName|LastName	|Email			|Phone|Country|Message			|
-			|abc			|def			|abc@def.com|12345|Belgium|hello sojeti |
+			|abc			|def			|abc@def.com|12345|Belgium|hello sogeti |
