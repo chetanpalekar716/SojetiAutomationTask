@@ -8,5 +8,4 @@ Feature: Validate text and links on Automation Page under Services
     And selects "Automation" submenu
 		Then User is navigated to "Automation" Page
 		And the text "Automation" is displayed
-		#When User hovers on "Services" link
-
+		And the "Services" menu along with "Automation" submenu are selected

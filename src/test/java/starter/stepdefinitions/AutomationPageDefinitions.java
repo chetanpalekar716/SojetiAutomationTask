@@ -19,5 +19,4 @@ public class AutomationPageDefinitions {
 	public void the_text_is_displayed(String pageText) {
 		assertThat(automationPageActions.validatePageText(pageText)).isTrue();
 	}
-
 }

@@ -1,5 +1,7 @@
 package starter.automation;
 
+import java.math.BigDecimal;
+
 import net.thucydides.core.annotations.Step;
 
 public class AutomationPageActions {
@@ -15,4 +17,5 @@ public class AutomationPageActions {
 	public boolean validatePageText(String pageText) {
 		return automationPage.checkPageTextDisplayed(pageText);
 	}
+	
 }
