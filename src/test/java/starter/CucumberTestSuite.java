@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        tags = "@automationPage",
+        tags = "@SubmitContactForm",
         features = "src/test/resources/features"
         
 )

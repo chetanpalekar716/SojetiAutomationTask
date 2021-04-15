@@ -25,7 +25,6 @@ public class HomePageActions {
 	@Step("Validate if '{0}' menu and '{1}' submenu are selected")
 	public String validatePageStyle(String menuItem, String subMenuItem) {
 		homePage.hoverOverMenu(menuItem);
-		
 		if(homePage.getMenuFontColor(menuItem).equals(homePage.getSubMenuFontColor(subMenuItem))) {
 			return homePage.getMenuFontColor(menuItem);
 		}
