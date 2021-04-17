@@ -15,9 +15,15 @@ public class CheckServicesDefinition {
 	@Steps
 	ServiceApi serviceApi;
 		
-	@Given("an API Get Request is triggered")
-	public void an_api_get_request_is_triggered() {
-		serviceApi.getURI();
+	@Given("an API Get Request is triggered with endpoint {string}")
+	public void an_api_get_request_is_triggered_with_endpoint(String endPoint) {
+		serviceApi.getURL(endPoint);
+	}
+	
+	@Given("an API Get Request is triggered with {string} and {string} details")
+	public void an_api_get_request_is_triggered_with_and_details(String countryCode, String postalCode) {
+		String endPoint = "/" + countryCode + "/" + postalCode;
+		serviceApi.getURL(endPoint);
 	}
 	
 	@Given("API service response code is {int}")
@@ -46,5 +52,10 @@ public class CheckServicesDefinition {
 	@Then("for post code {string} the place name has {string}")
 	public void for_post_code_the_place_name_has(String postCode, String placeName) {
 		assertThat(serviceApi.getPlaceNameForPostCode(postCode)).contains(placeName);
+	}
+	
+	@Then("place name is {string}")
+	public void place_name_is(String placeName) {
+		assertThat(serviceApi.getPlaceName()).contains(placeName);
 	}
 }
