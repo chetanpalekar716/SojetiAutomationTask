@@ -1,0 +1,14 @@
+starter\automation\AutomationPageActions.class
+starter\restservices\ServiceApi.class
+starter\utilities\Constants$Colors.class
+starter\utilities\HelperFunctions.class
+starter\stepdefinitions\AutomationPageDefinitions.class
+starter\stepdefinitions\HomePageDefinitions.class
+starter\CucumberTestSuite.class
+starter\home\HomePageActions.class
+starter\utilities\ConfigReader.class
+starter\home\HomePage.class
+starter\stepdefinitions\CheckServicesDefinition.class
+starter\utilities\Constants$HttpResponseStatus.class
+starter\automation\AutomationPage.class
+starter\utilities\Constants.class

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Check for Response Status Code, Content Type, Response Time and other other basic response validation","Verify response for a city","SUCCESS","2021-04-17T22:41:28.521+02:00[Europe/Berlin]","0.0","18.18"
+"Check for Response Status Code, Content Type, Response Time and other other basic response validation","Verify response for multiple cities","SUCCESS","2021-04-17T22:41:46.769+02:00[Europe/Berlin]","0.0","1.73"
+"Fill and Submit Contact Us Form on Automation Page under Services","Fill and Submit Contact Us Form","SUCCESS","2021-04-17T22:41:48.53+02:00[Europe/Berlin]","0.0","117.78"
+"Validate text and links on Automation Page under Services","Automation text validation","SUCCESS","2021-04-17T22:43:46.355+02:00[Europe/Berlin]","0.0","97.1"
+"Verify all Worldwide Country specific Sogeti links","Check Country specific Sogeti links are working","SUCCESS","2021-04-17T22:45:25.162+02:00[Europe/Berlin]","0.0","87.81"
