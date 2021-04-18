@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Validate text and links on Automation Page under Services
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 92.679 s - in Validate text and links on Automation Page under Services

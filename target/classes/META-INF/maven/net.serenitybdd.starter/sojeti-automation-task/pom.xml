@@ -110,8 +110,7 @@
 						<webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
 					</systemPropertyVariables>
 					<parallel>classes</parallel>
-					<parallel>methods</parallel>
-					<useUnlimitedThreads>false</useUnlimitedThreads>
+					<useUnlimitedThreads>true</useUnlimitedThreads>
 				</configuration>
 				<executions>
 					<execution>

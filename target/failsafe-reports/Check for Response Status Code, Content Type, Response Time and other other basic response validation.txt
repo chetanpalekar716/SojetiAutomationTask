@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Check for Response Status Code, Content Type, Response Time and other other basic response validation
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.034 s - in Check for Response Status Code, Content Type, Response Time and other other basic response validation
